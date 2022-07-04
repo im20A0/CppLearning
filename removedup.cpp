@@ -9,6 +9,7 @@ public:
         for (it=nums.begin();it!=nums.end();it++) {
             cout<<*it<<" ";
         }
+        
         return 0;
     }
 };
