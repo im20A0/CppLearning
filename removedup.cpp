@@ -1,10 +1,9 @@
 #include <iostream>
 #include <vector>
-
+using namespace std;
 class Solution {
 public:
     int removeDuplicates(vector<int>& nums) {
-        using namespace std;
         vector<int>::iterator it;
         int prod=nums[0];
         for (it=nums.begin();it!=nums.end();it++) {
