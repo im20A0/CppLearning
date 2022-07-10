@@ -5,8 +5,7 @@ using namespace std;
 class Solution {
 public:
     int removeElement(vector<int>& nums, int val) {
-		vector<int>::iterator it;
-        for (it=nums.begin();it!=nums.end();) {
+        for (auto it=nums.begin();it!=nums.end();) {
             if (*it==val) {nums.erase(it);}
             else it++;
         }
@@ -14,8 +13,7 @@ public:
     }
 };
 void output(vector<int>& nums) {
-    vector<int>::iterator it;
-    for (it=nums.begin();it!=nums.end();it++) {
+    for (auto it=nums.begin();it!=nums.end();it++) {
         cout<<*it<<" ";
     }
     return;

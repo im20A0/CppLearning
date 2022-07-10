@@ -4,9 +4,8 @@ using namespace std;
 class Solution {
 public:
     int removeDuplicates(vector<int>& nums) {
-        vector<int>::iterator it;
         int prod = nums[0];
-        for (it=++nums.begin();it!=nums.end();) {
+        for (auto it=++nums.begin();it!=nums.end();) {
             if (*it==prod) {nums.erase(it);}
             else {prod = *it;it++;}
         }
@@ -14,8 +13,7 @@ public:
     }
 };
 void output(vector<int>& nums) {
-    vector<int>::iterator it;
-    for (it=nums.begin();it!=nums.end();it++) {
+    for (auto it=nums.begin();it!=nums.end();it++) {
         cout<<*it<<" ";
     }
     return;
